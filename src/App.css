@@ -14,14 +14,19 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: left;
+  font-size: 2vw;
+  color: black;
+}
+
+.App-header h3{
+  animation: App-header-load;
+  animation-duration: 3s;
+  height: 100%;
+  width: 100%;
+  margin: 1%;
 }
 
 .App-link {
@@ -35,4 +40,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes App-header-load{
+  0%  {margin-top: 23%; opacity: 0%; margin-left: 33%;}
+  50% {margin-top: 23%; opacity: 100%;margin-left: 33%;}
+  75% {margin-top: 1%; margin-left: 33%;}
+  100%  {margin-left: 1%;}
 }
